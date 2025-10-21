@@ -5,6 +5,9 @@ import Button from "../components/Button";
 import { tags } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { Fade } from "react-awesome-reveal";
+import { TypeAnimation } from "react-type-animation";
+import { Shimmering } from "../components/effects/Shimmer";
 
 const Nishy = () => {
   useGSAP(() => {
@@ -43,37 +46,49 @@ const Nishy = () => {
               </div>
             </figure>
             <div className="nishy-text">
-              <h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl">
+                <Shimmering>
+                    Hi, 
+                    This is Nayma Amin Nishy</Shimmering>
+              </h1>
+              <p className="text-white-50 text-2xl sm:text-3xl md:text-4xl mt-4">
                 Showcasing
-                <span className="slider">
+                <span className="slider text-inherit leading-tight">
                   <span className="textwrapper">
                     {tags.map((tag) => (
                       <span
                         key={tag.text}
-                        className="flex items-center md:gap-3 gap-1 pb-2"
+                        className="flex items-center gap-1 sm:gap-15 md:gap-5 pb-10"
                       >
                         <img
                           src={tag.imgPath}
                           alt={tag.text}
-                          className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
+                          className="rounded-full bg-white-50
+              size-6 sm:size-8 md:size-10 xl:size-12
+              p-1 sm:p-1.5 md:p-2"
                         />
-
-                        <span>{tag.text}</span>
+                        <span className="text-inherit">{tag.text}</span>
                       </span>
                     ))}
                   </span>
                 </span>
-              </h1>
-              <h1>for Real World Scenarios</h1>
-              <h1>that Provides Solutions.</h1>
+              </p>
+
+              <p className="text-white-50 text-2xl sm:text-3xl md:text-4xl mt-4">
+                for Real World Scenarios
+              </p>
+              <p className="text-white-50 text-2xl sm:text-3xl md:text-4xl mt-4">
+                that Provides Solutions.
+              </p>
             </div>
 
+            <Fade>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none w-full max-w-[500px] overflow-x-hidden">
-              Hi, This is Nayma Amin Nishy. I am a Full Stack developer with a
-              vision and mission to create something innovative and
-              revolutionary.
+              I am a Full Stack developer with a vision and mission to create
+              something innovative and revolutionary.
             </p>
-
+            </Fade>
+            
             <Button
               className="md:w-80 md:h-16 w-60 h-12"
               id="bt"
