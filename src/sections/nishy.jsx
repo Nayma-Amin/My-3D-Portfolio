@@ -5,7 +5,7 @@ import { tags } from "../constants"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-const nishy = () => {
+const Nishy = () => {
     useGSAP(() => {
         gsap.fromTo(".nishy-text h1", 
             {
@@ -82,4 +82,4 @@ const nishy = () => {
     )
 }
 
-export default nishy
+export default Nishy
