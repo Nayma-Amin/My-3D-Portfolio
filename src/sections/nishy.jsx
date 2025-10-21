@@ -37,7 +37,6 @@ const Nishy = () => {
         {/* Left Side : My content */}
         <header className="flex flex-col justify-center md:w-full w-screen md:px-5 px-5">
           <div className="flex flex-col gap-5 p-0">
-            {/* Right Side : 3D content */}
             <figure>
               <div className="nishy-3d-layout">
                 <DimensionExperience />
