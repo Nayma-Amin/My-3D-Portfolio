@@ -1,40 +1,56 @@
-import React, { use, useRef } from 'react'
+import React, { useRef } from 'react';
 
-const GlowCard = ({card, children, index}) => {
+const GlowCard = ({ card, children, index, variant = "experience" }) => {
+  const cardRefs = useRef([]);
 
-    const cardRefs = useRef([]);
+  const handleMouseMove = (index) => (e) => {
+    const card = cardRefs.current[index];
+    if (!card) return;
 
-    const handleMouseMove = (index) => (e) => {
-        const card = cardRefs.current[index];
-        if (!card) return;
+    const rect = card.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left - rect.width / 2;
+    const mouseY = e.clientY - rect.top - rect.height / 2;
 
-        const rect = card.getBoundingClientRect();
-        const mouseX = e.clientX - rect.left - rect.width / 2;
-        const mouseY = e.clientY - rect.top - rect.height / 2;
+    let angle = Math.atan2(mouseY, mouseX) * (180 / Math.PI);
+    angle = (angle + 360) % 360;
+    card.style.setProperty("--start", angle + 60);
+  };
 
-        let angle = Math.atan2(mouseY, mouseX) * (180 / Math.PI);
-
-        angle = (angle + 360) % 360;
-        
-        card.style.setProperty('--start', angle + 60);
-    }
   return (
-    <div ref={(el) => (cardRefs.current[index] = el)} 
-    onMouseMove={handleMouseMove(index)} 
-    className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column">
-        <div className="glow" />
-        <div className="flex items-center gap-1 mb-5">
-        {Array.from({ length: 5}, (_, i) => (
-            <img src="/images/star.png" key={i} alt="star"
-            className="size-5"/>
-            ))}
-            </div>
-            <div className="mb-5">
-                <p className="text-white-50 text-lg">{card.review}</p>
-            </div>
-            {children}
-    </div>
-  )
-}
+    <div
+      ref={(el) => (cardRefs.current[index] = el)}
+      onMouseMove={handleMouseMove(index)}
+      className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"
+    >
+      <div className="glow" />
 
-export default GlowCard
+      {/* Top stars (only for experience variant) */}
+      {variant === "experience" && (
+        <div className="flex items-center gap-1 mb-5">
+          {Array.from({ length: 5 }, (_, i) => (
+            <img src="/images/star.png" key={i} alt="star" className="size-5" />
+          ))}
+        </div>
+      )}
+
+      {/* Card content */}
+      {variant === "experience" ? (
+        <div className="mb-5">
+          <p className="text-white-50 text-lg">{card.review}</p>
+          {children}
+        </div>
+      ) : (
+        <div className="flex flex-col items-center gap-5">
+          <img
+            src={card.imgP}
+            alt={card.title}
+            className="rounded-xl w-full max-w-[400px]"
+          />
+          {children}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default GlowCard;

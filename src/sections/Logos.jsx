@@ -1,38 +1,41 @@
 import React from 'react'
-// import { logoIconsList } from '../../constants' // comment out if not needed
+import Headers from '../components/3D_models/Headers'
+import { logoIconsList } from '../constants'
 
-// const LogoIcon = ({ icon }) => {
-//     return (
-//         <div className="flex-non flex-center mar-item">
-//             <img src={icon.imgPath} alt={icon.name} />
-//         </div>
-//     )
-// }
+const LogoIcon = ({ icon }) => {
+  return (
+    <div className="mar-item">
+      <img src={icon.imgPath} alt={icon.name} />
+      <p className="text-sm font-semibold">{icon.name}</p>
+      <p className="text-xs text-gray-400">{icon.percentage}%</p>
+    </div>
+  )
+}
 
 const Logos = () => {
   return (
-    <div className="md:my-20 my-10 relative">
-      <div className="gradient-edge" />
-      <div className="gradient-edge" />
+    <section id="skills">
+        <Headers
+          title="My Skills"
+          sub="Technologies I Work With"
+        />
 
-      <div className="mar h-52">
-        <div className="mar-box md:gap-12 gap-5">
-          {/* logo list display
-          {logoIconsList.map((icon) => (
-            <LogoIcon key={icon.name} icon={icon}/>
-          ))}
-          {logoIconsList.map((icon) => (
-            <LogoIcon key={icon.name} icon={icon}/>
-          ))} */}
+        <div className="mt-20 relative">
+          <div className="gradient-edge" />
+          <div className="gradient-edge" />
 
-          <h1 className="text-xl font-semibold whitespace-nowrap animate-marquee">
-            Welcome to My Portfolio — This portfolio has been created to show my skills in React.js, Three.js, GSAP, TailwindCSS and 3D model handling. 
-            These simple yet elegant design reflects my approach to web development, 
-            focusing on both aesthetics and functionality. Explore the various sections to learn more about my projects, experience, and how I can contribute to your team.
-          </h1>
+          <div className="mar h-52">
+            <div className="mar-box">
+              {logoIconsList.map((icon) => (
+                <LogoIcon key={icon.name} icon={icon} />
+              ))}
+              {logoIconsList.map((icon) => (
+                <LogoIcon key={`${icon.name}-dup`} icon={icon} />
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+    </section>
   )
 }
 

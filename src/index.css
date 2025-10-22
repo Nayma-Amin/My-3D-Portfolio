@@ -271,21 +271,29 @@ section {
     animation: marquee 15s linear infinite;
   }
 
-  .timeline-wrapper {
-    @apply absolute top-0 xl:left-[35.5vw] md:left-10 left-5 h-full flex justify-center;
-  }
-
-  .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-[#011e1b];
-  }
-
-  .timeline-logo {
-    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border bg-[#011e1b];
-  }
-
   .exp-card-wrapper {
-    @apply flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between;
-  }
+  @apply grid grid-cols-1 xl:grid-cols-[1fr_auto_1fr] items-start xl:gap-16 gap-10 relative;
+}
+
+.exp-left {
+  @apply flex justify-end xl:justify-end;
+}
+
+.exp-right {
+  @apply flex justify-start;
+}
+
+.timeline-wrapper {
+  @apply relative flex justify-center items-stretch z-30;
+}
+
+.timeline {
+  @apply absolute z-10 h-[110%] -top-10 w-12 bg-[#011e1b];
+}
+
+  .expText {
+  @apply flex xl:gap-20 md:gap-10 gap-5 relative z-40;
+}
 
   .gradient-edge {
     @apply w-36 h-full absolute bottom-0 z-20;
@@ -383,7 +391,7 @@ section {
 
 
 .gradient-line {
-  width: 60px;
+  width: 10px;
   background: linear-gradient(
     0deg,
     rgba(69, 222, 196, 0) 0%,
@@ -421,16 +429,43 @@ section {
 
 .mar-box {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
   width: 200%;
-  height: 100%;
   position: absolute;
-  overflow: hidden;
-  animation: mar 60s linear infinite;
+  animation: mar 30s linear infinite;
+  gap: 3rem;
+  padding: 1rem 0;
 }
 
 .mar-item {
-  float: left;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  height: 120px;
+}
+
+.mar-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  transition: transform 0.8s ease;
+}
+
+.mar-item img:hover {
+  transform: scale(1.1);
+}
+
+.mar-item p {
+  margin: 0;
+  line-height: 1.2;
+  color: white;
 }
 
 @keyframes mar {

@@ -5,6 +5,7 @@ import { SiGmail } from 'react-icons/si';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { Fade } from 'react-awesome-reveal';
+import { Shimmering } from './effects/Shimmer';
 
 const NavBar = () => {
     const[scrolled, setScrolled] = useState(false);
@@ -22,7 +23,7 @@ const NavBar = () => {
         <div className="inner">
         <Fade>
             <a href="#nishy" className="logo">
-            Nayma Amin Nishy
+           <Shimmering>Nayma Amin Nishy</Shimmering>
         </a>
         
         <nav className="desktop">
@@ -69,7 +70,9 @@ const NavBar = () => {
             </div>
         <a href="/" className="contact-btn group">
             <div className="inner">
-                <span>Download Resume</span>
+                <span>
+                    Resume
+                </span>
                 </div>
         </a>
         </Fade>

@@ -37,39 +37,68 @@ const btItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    name: "HTML5",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+    percentage: 95,
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    name: "CSS3",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+    percentage: 90,
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    name: "TailwindCSS",
+    imgPath: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+    percentage: 85,
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    name: "JavaScript",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+    percentage: 90,
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    name: "TypeScript",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+    percentage: 75,
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    name: "React",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+    percentage: 85,
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    name: "Next.js",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+    percentage: 70,
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    name: "GSAP",
+    imgPath: "https://cdn.worldvectorlogo.com/logos/greensock.svg",
+    percentage: 65,
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    name: "Three.js",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/threejs/threejs-original.svg",
+    percentage: 60,
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    name: "Firebase",
+    imgPath: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+    percentage: 80,
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    name: "Flutter",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg",
+    percentage: 75,
+  },
+  {
+    name: "Dart",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg",
+    percentage: 70,
   },
 ];
+
+
 
 const abilities = [
   {
@@ -184,6 +213,30 @@ const qualityCards = [
   },
 ];
 
+const aboutCards = [
+  {
+    title: "Frontend Developer",
+    imgP: "/images/nishyDp.png",
+    review: "Languages (HTML5, CSS3, TailwindCSS, Bootstrap, JS, TS) Frameworks (React, Three, Next.js, Vue, GSAP) Main Focus (UI/UX, interactivity)",
+    responsibilities: [
+      "Developed and maintained user-facing features for web applications.",
+      "Collaborated with UI/UX teams to ensure seamless user experiences.",
+      "Implemented interactive animations and responsive designs.",
+    ],
+  },
+  {
+    title: "Education",
+    imgP: "/images/ewu.jpg",
+    review: "Languages (Dart, Flutter) Main Focus (Cross-platform mobile development, UI/UX)",
+    responsibilities: [
+      "Built cross-platform mobile applications with Flutter.",
+      "Integrated Firebase for authentication and database management.",
+      "Optimized app performance and responsiveness across devices.",
+    ],
+  },
+];
+
+
 const expLogos = [
   {
     name: "logo1",
@@ -213,6 +266,7 @@ export {
   logoIconsList,
   btItems,
   qualityCards,
+  aboutCards,
   expLogos,
   socialImgs,
   skillStackIcons,

@@ -1,8 +1,8 @@
-import React, { use } from 'react'
 import { useRef } from 'react'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import Headers from '../components/3D_models/Headers';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,8 +42,13 @@ const Display = () => {
 
   return (
     <section id="work" ref={sectionRef} className="work-display">
-        <div className="w-full">
-    <div className="displaylayout">
+        <div className="w-full h-full md:px-20 px-5">
+            <Headers
+          title="My Recent Projects"
+          sub="Project Overview"
+        />
+
+    <div className="displaylayout mt-4">
         {/* Left Side : My content */}
         <div className="first-project" ref={work1Ref}>
             <div className="image-wrapper">

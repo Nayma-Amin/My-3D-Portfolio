@@ -1,4 +1,5 @@
 import React from 'react'
+import { Shimmering } from '../effects/Shimmer'
 
 const Headers = ({title, sub}) => {
   return (
@@ -7,7 +8,7 @@ const Headers = ({title, sub}) => {
             <p>{sub}</p>
             </div>
             <div className='font-semibold md:text-5xl text-3xl text-center'>
-            {title}
+            <Shimmering>{title}</Shimmering>
             </div> 
             </div>
   )
