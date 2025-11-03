@@ -9,7 +9,6 @@ const Image = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g opacity="0.15">
-        {/* Star outline paths replacing your previous square/diamond paths */}
         <path
           id="path_0"
           d="M301 30 L343 230 L571 230 L380 360 L450 570 L301 450 L152 570 L222 360 L31 230 L259 230 Z"
@@ -40,13 +39,13 @@ const Image = () => {
         ry="1.07433"
         fill="#945DD6"
       >
-        <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+        <animateMotion dur="20s" repeatCount="indefinite" rotate="auto">
           <mpath xlinkHref="#path_2" />
         </animateMotion>
       </ellipse>
 
       <path d="M294.685 193.474L268.932 219.258" stroke="url(#paint3_linear)">
-        <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+        <animateMotion dur="20s" repeatCount="indefinite" rotate="auto">
           <mpath xlinkHref="#path_2" />
         </animateMotion>
       </path>
@@ -90,7 +89,7 @@ const Image = () => {
         transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)"
         fill="#945DD6"
       >
-        <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+        <animateMotion dur="20s" repeatCount="indefinite" rotate="auto">
           <mpath xlinkHref="#path_0" />
         </animateMotion>
       </ellipse>
@@ -99,7 +98,7 @@ const Image = () => {
         transform="translate(-476.525 -363.313) rotate(-45 476.171 362.952)"
         stroke="url(#paint4_linear)"
       >
-        <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+        <animateMotion dur="20s" repeatCount="indefinite" rotate="auto">
           <mpath xlinkHref="#path_0" />
         </animateMotion>
       </path>
