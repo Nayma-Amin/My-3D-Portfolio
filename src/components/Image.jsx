@@ -37,7 +37,7 @@ const Image = () => {
         cy="193.118"
         rx="1.07306"
         ry="1.07433"
-        fill="#945DD6"
+        fill="#5dd6bc"
       >
         <animateMotion dur="20s" repeatCount="indefinite" rotate="auto">
           <mpath xlinkHref="#path_2" />
@@ -56,7 +56,7 @@ const Image = () => {
         transform="translate(-295.027 -193.118)"
         rx="1.07306"
         ry="1.07433"
-        fill="#46737"
+        fill="#d6d25d"
       >
         <animateMotion
           dur="5s"
@@ -87,7 +87,7 @@ const Image = () => {
         rx="1.07433"
         ry="1.07306"
         transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)"
-        fill="#945DD6"
+        fill="#f00a0a"
       >
         <animateMotion dur="20s" repeatCount="indefinite" rotate="auto">
           <mpath xlinkHref="#path_0" />
@@ -108,7 +108,7 @@ const Image = () => {
         rx="1.07433"
         ry="1.07306"
         transform="translate(-382.164 -155.029) rotate(90 382.164 155.029)"
-        fill="#F46737"
+        fill="#f00a12"
       >
         <animateMotion
           dur="10s"
@@ -139,7 +139,7 @@ const Image = () => {
         rx="1.07306"
         ry="1.07433"
         transform="translate(-333.324 -382.691) rotate(-180 333.324 382.691)"
-        fill="#F46737"
+        fill="#0af0d9"
       >
         <animateMotion
           dur="5s"
@@ -170,7 +170,7 @@ const Image = () => {
         rx="1.07306"
         ry="1.07433"
         transform="translate(-165.524 -93.9596)"
-        fill="#F46737"
+        fill="#e8f00a"
       >
         <animateMotion
           dur="10s"
@@ -201,7 +201,7 @@ const Image = () => {
         rx="1.07433"
         ry="1.07306"
         transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)"
-        fill="#13ADC7"
+        fill="#f0620a"
       >
         <animateMotion
           dur="12s"
