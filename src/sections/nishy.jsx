@@ -8,6 +8,7 @@ import gsap from "gsap";
 import { Fade } from "react-awesome-reveal";
 import { TypeAnimation } from "react-type-animation";
 import { Shimmering } from "../components/effects/Shimmer";
+import Image from "../components/Image";
 
 const Nishy = () => {
   useGSAP(() => {
@@ -25,15 +26,15 @@ const Nishy = () => {
         stagger: 0.2,
         delay: 0.5,
       }
-    );
-  });
+    )
+  })
   return (
     <section
       id="nishy"
       className="relative overflow-x-hidden w-full max-w-screen p-0"
     >
-      <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="" />
+      <div className=" absolute w-full h-full flex items-center justify-center">
+        <Image/>
       </div>
 
       <div className="nishy-layout p-0">
@@ -100,7 +101,7 @@ const Nishy = () => {
 
       <AnimatedBt />
     </section>
-  );
-};
+  )
+}
 
-export default Nishy;
+export default Nishy

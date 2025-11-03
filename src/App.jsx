@@ -10,6 +10,7 @@ import MySelf from "./sections/MySelf.jsx"
 
 const App = () => {
   return (
+
  <>
  <NavBar />
  <Nishy />
@@ -21,6 +22,7 @@ const App = () => {
  <Contact />
  <Footer />
  </> 
+
   )
 }
 
