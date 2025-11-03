@@ -72,7 +72,7 @@ const NavBar = () => {
               <FaLinkedinIn className="md:text-2xl" />
             </a>
           </div>
-          <a href="/" className="contact-btn group">
+          <a href="https://drive.google.com/file/d/1L26QXIiyHNACdACi609U9mQowqD60kT3/view?usp=sharing" className="contact-btn group">
             <div className="inner">
               <span>Resume</span>
             </div>

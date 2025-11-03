@@ -33,14 +33,14 @@ const Nishy = () => {
       id="nishy"
       className="relative overflow-x-hidden w-full max-w-screen p-0"
     >
-      <div className=" absolute w-full h-full flex items-center justify-center">
-        <Image/>
-      </div>
 
       <div className="nishy-layout p-0">
         {/* Left Side : My content */}
         <header className="flex flex-col justify-center md:w-full w-screen md:px-5 px-5">
           <div className="flex flex-col gap-5 p-0">
+            <div className=" absolute w-full h-full flex items-center justify-center z-0">
+        <Image/>
+      </div>
             <figure>
               <div className="nishy-3d-layout">
                 <DimensionExperience />
@@ -98,8 +98,9 @@ const Nishy = () => {
           </div>
         </header>
       </div>
-
-      <AnimatedBt />
+      <div className="relative z-20">
+            <AnimatedBt />
+          </div>
     </section>
   )
 }
