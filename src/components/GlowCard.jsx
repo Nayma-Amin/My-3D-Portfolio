@@ -24,7 +24,6 @@ const GlowCard = ({ card, children, index, variant = "experience" }) => {
     >
       <div className="glow" />
 
-      {/* Top stars (only for experience variant) */}
       {variant === "experience" && (
         <div className="flex items-center gap-1 mb-5">
           {Array.from({ length: 5 }, (_, i) => (
@@ -33,7 +32,6 @@ const GlowCard = ({ card, children, index, variant = "experience" }) => {
         </div>
       )}
 
-      {/* Card content */}
       {variant === "experience" ? (
         <div className="mb-5">
           <p className="text-white-50 text-lg">{card.review}</p>

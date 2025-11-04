@@ -215,7 +215,7 @@ const qualityCards = [
 
 const aboutCards = [
   {
-    title: "Frontend Developer",
+    title: "Hi, This is Nayma Amin Nishy",
     imgP: "/images/nishyDp.png",
     review: "Languages (HTML5, CSS3, TailwindCSS, Bootstrap, JS, TS) Frameworks (React, Three, Next.js, Vue, GSAP) Main Focus (UI/UX, interactivity)",
     responsibilities: [

@@ -5,6 +5,7 @@ import GlowCard from "../components/GlowCard";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Shimmering } from "../components/effects/Shimmer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,22 +53,21 @@ const MySelf = () => {
           <div className="relative xl:space-y-32 space-y-10">
             {aboutCards.map((card, index) => (
   <div key={card.title} className="exp-card-wrapper relative">
-    {/* Left Side: GlowCard */}
     <div className="exp-left">
-      <GlowCard card={card} index={index} variant="about" />
+      <GlowCard card={card} index={index} variant="about">
+      </GlowCard>
     </div>
 
-    {/* Center Divider */}
     <div className="timeline-wrapper">
       <div className="timeline" />
       <div className="gradient-line" />
     </div>
 
-    {/* Right Side: Text */}
     <div className="exp-right">
       <div className="expText">
         <div>
-          <h1 className="font-semibold text-3xl">{card.title}</h1>
+          <h1 className="font-semibold text-3xl">
+            <Shimmering>{card.title}</Shimmering></h1>
           <p className="text-[#839cb5] italic">Overview</p>
           <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
             {card.responsibilities.map((r) => (
