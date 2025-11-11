@@ -46,7 +46,7 @@ const NavBar = () => {
               ))}
             </ul>
           </nav>
-          <div className="flex items-center mb-0 justify-start gap-2 flex-wrap md:flex-nowrap">
+          <div className="flex items-center mb-0 justify-start gap-2 md:gap-4">
             <a
               href="mailto:naymaaminnishy22@gmail.com"
               target="_blank"
