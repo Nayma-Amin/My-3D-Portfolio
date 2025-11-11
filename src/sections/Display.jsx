@@ -89,7 +89,7 @@ const Display = () => {
                 href="https://github.com/Nayma-Amin/Download-PulseOfTheRedTide-UNI-BLOOD-"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-block border w-25 border-white rounded-full overflow-hidden transition-all duration-500"
+                className="group inline-block border w-25 h-10 border-white rounded-full overflow-hidden transition-all duration-500"
               >
                 <div className="inner bg-white px-6 py-2 rounded-full transition-all duration-500 group-hover:bg-black">
                   <span className="text-black font-semibold transition-all duration-500 group-hover:text-white">
@@ -108,7 +108,7 @@ const Display = () => {
                 href="https://github.com/Nayma-Amin/Lost-and-Found"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-block border w-25 border-white rounded-full overflow-hidden transition-all duration-500"
+                className="group inline-block border w-25 h-10 border-white rounded-full overflow-hidden transition-all duration-500"
               >
                 <div className="inner bg-white px-6 py-2 rounded-full transition-all duration-500 group-hover:bg-black">
                   <span className="text-black font-semibold transition-all duration-500 group-hover:text-white">

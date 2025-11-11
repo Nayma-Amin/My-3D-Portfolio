@@ -22,7 +22,10 @@ const NavBar = () => {
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
         <Fade>
-          <a href="#nishy" className="logo flex items-center gap-2 flex-shrink-0">
+          <a
+            href="#nishy"
+            className="logo flex items-center gap-2 flex-shrink-0"
+          >
             <img
               src="/images/logologoL.png"
               alt="logo"
@@ -81,8 +84,8 @@ const NavBar = () => {
             rel="noopener noreferrer"
             className="group inline-block border border-white rounded-full overflow-hidden transition-all duration-500"
           >
-            <div className="inner bg-white px-6 py-2 rounded-full transition-all duration-500 group-hover:bg-black">
-              <span className="text-black font-semibold transition-all duration-500 group-hover:text-white">
+            <div className="inner bg-white px-4 py-1 md:px-6 md:py-2 rounded-full transition-all duration-500 group-hover:bg-black">
+              <span className="text-black text-sm md:text-base font-semibold transition-all duration-500 group-hover:text-white">
                 Resume
               </span>
             </div>
