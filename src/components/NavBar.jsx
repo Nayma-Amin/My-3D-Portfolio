@@ -22,13 +22,16 @@ const NavBar = () => {
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
         <Fade>
-          <a href="#nishy" className="logo">
+          <a href="#nishy" className="logo flex items-center gap-2">
             <img
               src="/images/logologoL.png"
               alt="logo"
               className="w-8 h-8 md:w-10 md:h-10 object-contain"
             />
-            <Shimmering>Nayma Amin Nishy</Shimmering>
+            <Shimmering>
+              <span className="inline md:hidden">Nayma</span>{" "}
+              <span className="hidden md:inline">Nayma Amin Nishy</span>{" "}
+            </Shimmering>
           </a>
 
           <nav className="desktop">
