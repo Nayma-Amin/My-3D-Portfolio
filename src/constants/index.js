@@ -219,9 +219,9 @@ const aboutCards = [
     imgP: "/images/nishyDp.png",
     review: "Languages (HTML5, CSS3, TailwindCSS, Bootstrap, JS, TS) Frameworks (React, Three, Next.js, Vue, GSAP) Main Focus (UI/UX, interactivity)",
     responsibilities: [
-      "Developed and maintained user-facing features for web applications.",
-      "Collaborated with UI/UX teams to ensure seamless user experiences.",
-      "Implemented interactive animations and responsive designs.",
+      "I am a growing Full Stack developer with a vision and mission to create something for Real World Scenarios that Provides Solutions. I have been practicing development for over 2 year and have completed several projects. I started with simple web applications and gradually moved to complex, interactive, and dynamic web applications. I enjoy the complexity of creating something from scratch and learning more than I could ever imagine. I am passionate about coding and eager to learn new technologies and improve my skills.",
+      "Along with my coding interest I love doing creative learning through paintings, solving mathematical problems and puzzles. These interests align with my thought process to create something eye catchy and functional. It is always mesmerizing to see how my knowledge creates something that stands out among my other projects. I love to explore new technologies, I like the adventure of learning something from scratch. Reminds me of mountain climbing, that once felt impossible standing at the bottom but now seems like an accomplishment of dreams.",
+      "I wish and pray to grow more, learn something everyday. I am eager to work with amazing people and create something innovative and revolutionary. I want to create solutions that makes life easier and enjoyable. I don't want to be just a developer but I wish to be a creator, a innovator who brings life to projects with novelty.",
     ],
   },
   {
@@ -229,9 +229,9 @@ const aboutCards = [
     imgP: "/images/ewu.jpg",
     review: "Languages (Dart, Flutter) Main Focus (Cross-platform mobile development, UI/UX)",
     responsibilities: [
-      "Built cross-platform mobile applications with Flutter.",
-      "Integrated Firebase for authentication and database management.",
-      "Optimized app performance and responsiveness across devices.",
+      "Bachelor of Science in Computer Science and Engineering from East West University (2021-2025). My journey started in Fall 2021 and eneded on Summer 2025. I have completed courses like Data Structures and Algorithms, Database Management Systems, Web Development, Mobile Application Development, Software Engineering, Computer Networks etc.",
+      "In my academic life I have completed several projects, including a web-based video sharing paltform, a student management system and a mobile app for campus navigation etc. These projects have helped me to develop my skills in web and mobile development, database management and user experience design. These experiences have been preparing me for a successful career in the tech industry.",
+      "The Question I have had for years 'What am I learning?' seems to have a answer now. My journey was filled with failures and lessons but it never left me behind. I was at my pace running, walking or stumbling towards my goal. As a graduate when I look back to my journey, I am grateful for every scolding, every judgement and every failure because that has shaped me into whatever and whoever I am today.",
     ],
   },
 ];

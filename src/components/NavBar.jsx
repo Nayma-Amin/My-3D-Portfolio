@@ -72,9 +72,16 @@ const NavBar = () => {
               <FaLinkedinIn className="md:text-2xl" />
             </a>
           </div>
-          <a href="https://drive.google.com/file/d/1L26QXIiyHNACdACi609U9mQowqD60kT3/view?usp=sharing" className="contact-btn group">
-            <div className="inner">
-              <span>Resume</span>
+          <a
+            href="https://drive.google.com/file/d/1L26QXIiyHNACdACi609U9mQowqD60kT3/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-block border border-white rounded-full overflow-hidden transition-all duration-500"
+          >
+            <div className="inner bg-white px-6 py-2 rounded-full transition-all duration-500 group-hover:bg-black">
+              <span className="text-black font-semibold transition-all duration-500 group-hover:text-white">
+                Resume
+              </span>
             </div>
           </a>
         </Fade>
