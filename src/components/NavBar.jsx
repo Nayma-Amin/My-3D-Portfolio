@@ -26,7 +26,7 @@ const NavBar = () => {
             <img
               src="/images/logologoL.png"
               alt="logo"
-              className="w-6 h-6 md:w-4 md:h-4 object-contain"
+              className="w-6 h-6 md:w-8 md:h-8 object-contain"
             />
             <Shimmering>
               <span className="inline md:hidden">Nayma</span>{" "}
@@ -46,7 +46,7 @@ const NavBar = () => {
               ))}
             </ul>
           </nav>
-          <div className="flex items-center mb-0 justify-start gap-2">
+          <div className="flex items-center mb-0 justify-start gap-2 flex-wrap md:flex-nowrap">
             <a
               href="mailto:naymaaminnishy22@gmail.com"
               target="_blank"
