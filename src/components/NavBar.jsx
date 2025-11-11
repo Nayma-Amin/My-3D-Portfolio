@@ -24,7 +24,7 @@ const NavBar = () => {
         <Fade>
           <a href="#nishy" className="logo">
             <img
-              src="/images/top.png"
+              src="/images/logologoL.png"
               alt="logo"
               className="w-8 h-8 md:w-10 md:h-10 object-contain"
             />
