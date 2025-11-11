@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Shimmering } from "../components/effects/Shimmer";
+import ImageLine from "../components/models/ImageLine";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,6 +51,10 @@ const MySelf = () => {
         <Headers title="About Me" sub="A Brief Introduction" />
 
         <div className="mt-32 relative">
+
+          <div className="absolute inset-0 z-10 pointer-events-none">
+            <ImageLine />
+          </div>
           <div className="relative xl:space-y-32 space-y-10">
             {aboutCards.map((card, index) => (
   <div key={card.title} className="exp-card-wrapper relative">
@@ -65,6 +70,9 @@ const MySelf = () => {
 
     <div className="exp-right">
       <div className="expText">
+        <div className="absolute inset-0 -z-10 pointer-events-none">
+            <ImageLine />
+          </div>
         <div>
           <h1 className="font-semibold text-3xl">
             <Shimmering>{card.title}</Shimmering></h1>

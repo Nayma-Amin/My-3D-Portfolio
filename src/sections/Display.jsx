@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import Headers from "../components/3D_models/Headers";
+import ImageCloud from "./ImageCloud";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,6 +50,7 @@ const Display = () => {
         <div className="displaylayout mt-4">
           {/* Left Side : My content */}
           <div className="first-project" ref={work1Ref}>
+
             <div className="image-wrapper">
               <img src="/images/nunchi.png" alt="Nunchi" />
             </div>
