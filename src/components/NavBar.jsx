@@ -34,6 +34,7 @@ const NavBar = () => {
             </Shimmering>
           </a>
 
+          <div className="flex items-center gap-2 flex-wrap md:flex-nowrap">
           <nav className="desktop">
             <ul>
               {navLinks.map(({ link, name }) => (
@@ -46,6 +47,7 @@ const NavBar = () => {
               ))}
             </ul>
           </nav>
+          </div>
           <div className="flex items-center mb-0 justify-start gap-2">
             <a
               href="mailto:naymaaminnishy22@gmail.com"
