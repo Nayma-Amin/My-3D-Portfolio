@@ -22,7 +22,7 @@ const NavBar = () => {
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
         <Fade>
-          <a href="#nishy" className="logo flex items-center gap-2">
+          <a href="#nishy" className="logo flex items-center gap-2 flex-shrink-0">
             <img
               src="/images/logologoL.png"
               alt="logo"
@@ -46,7 +46,7 @@ const NavBar = () => {
               ))}
             </ul>
           </nav>
-          <div className="flex items-center gap-2 flex-wrap md:flex-nowrap">
+          <div className="flex items-center mb-0 justify-start gap-2">
             <a
               href="mailto:naymaaminnishy22@gmail.com"
               target="_blank"
