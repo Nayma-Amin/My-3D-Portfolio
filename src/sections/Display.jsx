@@ -52,19 +52,19 @@ const Display = () => {
           <div className="first-project" ref={work1Ref}>
 
             <div className="image-wrapper">
-              <img src="/images/nunchi.png" alt="Nunchi" />
+              <img src="/images/cutesy.png" alt="Cutesy" />
             </div>
             <div className="text-content">
-              <h2>Video Sharing Website (Nunchi)</h2>
+              <h2>Shopping App (Cutesy)</h2>
 
               <p className="text-white-50 md:text-xl">
-                Nunchi is a korean word that means "Watching Over". This is
-                fully built using HTML, CSS, PHP, JAVASCRIPT, (AJAX, JQuery) and
-                for Security and Password setups used Composer. For Database
-                used XAMPP and phpmyadmin.
+                Cutesy is a comprehensive shopping application designed to provide users with a seamless and enjoyable online shopping experience. 
+                Built using Flutter and Dart to ensure cross-platform compatibility, Cutesy offers a wide range of features including user authentication, product browsing, shopping cart functionality, and secure payment processing.
+                The app boasts a user-friendly interface with intuitive navigation, allowing users to easily explore various product categories, view detailed product information, and make purchases with just a few taps. 
+                Used Firebase for backend services, including real-time database management and user authentication, ensuring data security and reliability.
               </p>
               <a
-                href="https://github.com/Nayma-Amin/Video_Sharing_Website_Nunchi"
+                href="https://github.com/Nayma-Amin/Cutesy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-block border border-white rounded-full overflow-hidden transition-all duration-500"
