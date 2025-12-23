@@ -18,7 +18,6 @@ const App = () => {
  <Display />
  <Logos />
  <Qualities />
- <SkillStack />
  <Contact />
  <Footer />
  </> 

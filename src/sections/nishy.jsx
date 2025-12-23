@@ -85,7 +85,7 @@ const Nishy = () => {
 
             <Fade>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none w-full max-w-[500px] overflow-x-hidden">
-              I am a Full Stack developer with a vision and mission to create
+              I am a Software Engineer with a vision and mission to create
               something innovative and revolutionary.
             </p>
             </Fade>
