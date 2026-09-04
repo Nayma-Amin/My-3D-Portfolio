@@ -60,6 +60,28 @@ const Display = () => {
               <p className="text-white-50 md:text-xl">
                 A complete ride-hailing ecosystem connecting passengers and drivers through ride booking, real-time tracking, trip management, payments, and transparent pricing. The rider and driver apps streamline the journey from ride requests and navigation to trip completion.
               </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.brother.userbrother&pcampaignid=web_share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-block border border-white rounded-full overflow-hidden transition-all duration-500"
+                >
+                  <div className="inner bg-white px-6 py-2 rounded-full transition-all duration-500 group-hover:bg-black">
+                    <span className="text-black font-semibold transition-all duration-500 group-hover:text-white">Rider</span>
+                  </div>
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.brother.driver&pcampaignid=web_share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-block border border-white rounded-full overflow-hidden transition-all duration-500"
+                >
+                  <div className="inner bg-white px-6 py-2 rounded-full transition-all duration-500 group-hover:bg-black">
+                    <span className="text-black font-semibold transition-all duration-500 group-hover:text-white">Driver</span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
           {/* Right Side */}
@@ -71,6 +93,16 @@ const Display = () => {
             </div>
             <h1>Softnutrivia</h1>
             <p className="text-white-50 md:text-lg">An AI-powered nutrition and meal-tracking application for personalized guidance, calorie and protein tracking, and healthier eating habits.</p>
+            <a
+              href="https://apps.apple.com/us/app/softnutrivia/id6779121437"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-block border border-white rounded-full overflow-hidden transition-all duration-500"
+            >
+              <div className="inner bg-white px-6 py-2 rounded-full transition-all duration-500 group-hover:bg-black">
+                <span className="text-black font-semibold transition-all duration-500 group-hover:text-white">App Store</span>
+              </div>
+            </a>
 
             <div className="project" ref={work3Ref}>
               <div className="image-wrapper bg-[#1fb8a3]">
@@ -79,6 +111,16 @@ const Display = () => {
             </div>
             <h1>Artisan SA</h1>
             <p className="text-white-50 md:text-lg">A digital marketplace connecting customers with verified artisans and service professionals across South Africa.</p>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.kashmira.app&pcampaignid=web_share"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-block border border-white rounded-full overflow-hidden transition-all duration-500"
+            >
+              <div className="inner bg-white px-6 py-2 rounded-full transition-all duration-500 group-hover:bg-black">
+                <span className="text-black font-semibold transition-all duration-500 group-hover:text-white">Play Store</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
