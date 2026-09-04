@@ -7,6 +7,7 @@ import SkillStack from "./sections/SkillStack.jsx"
 import Contact from "./sections/Contact.jsx"
 import Footer from "./sections/Footer.jsx"
 import MySelf from "./sections/MySelf.jsx"
+import ExperienceSection from "./sections/ExperienceSection.jsx";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
  <NavBar />
  <Nishy />
  <MySelf />
+ <ExperienceSection />
  <Display />
  <Logos />
  <Qualities />

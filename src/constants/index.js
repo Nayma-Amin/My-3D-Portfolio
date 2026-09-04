@@ -4,6 +4,10 @@
     link: "#about",
   },
   {
+    name: "Experience",
+    link: "#experience",
+  },
+  {
     name: "My Projects",
     link: "#work",
   },
@@ -96,9 +100,163 @@ const logoIconsList = [
     imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg",
     percentage: 70,
   },
+  {
+    name: "Java",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+    percentage: 70,
+  },
+  {
+    name: "SQL",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
+    percentage: 70,
+  },
+  {
+    name: "PHP",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
+    percentage: 65,
+  },
+  {
+    name: "XML",
+    percentage: 70,
+  },
+  {
+    name: "Kotlin",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg",
+    percentage: 65,
+  },
+  {
+    name: "Android",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg",
+    percentage: 70,
+  },
+  {
+    name: "iOS",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg",
+    percentage: 65,
+  },
+  {
+    name: "REST APIs",
+    percentage: 80,
+  },
+  {
+    name: "Riverpod",
+    percentage: 75,
+  },
+  {
+    name: "Provider",
+    percentage: 75,
+  },
+  {
+    name: "GetX",
+    percentage: 75,
+  },
+  {
+    name: "AJAX",
+    percentage: 65,
+  },
+  {
+    name: "jQuery",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg",
+    percentage: 65,
+  },
+  {
+    name: "Java Swing",
+    percentage: 60,
+  },
+  {
+    name: "Figma",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg",
+    percentage: 80,
+  },
+  {
+    name: "Prototypes",
+    percentage: 80,
+  },
+  {
+    name: "Case Study",
+    percentage: 75,
+  },
+  {
+    name: "3D Modeling",
+    percentage: 65,
+  },
+  {
+    name: "Android Studio",
+    percentage: 75,
+  },
+  {
+    name: "IntelliJ IDEA",
+    percentage: 70,
+  },
+  {
+    name: "Visual Studio",
+    percentage: 75,
+  },
+  {
+    name: "Cisco Packet Tracer",
+    percentage: 65,
+  },
+  {
+    name: "Canva",
+    percentage: 75,
+  },
+  {
+    name: "Git & GitHub",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
+    percentage: 80,
+  },
+  {
+    name: "CI/CD Pipelines",
+    percentage: 65,
+  },
+  {
+    name: "Postman",
+    imgPath: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
+    percentage: 75,
+  },
+  {
+    name: "XAMPP",
+    percentage: 70,
+  },
+  {
+    name: "Bangla",
+    percentage: 100,
+  },
+  {
+    name: "English",
+    percentage: 90,
+  },
+  {
+    name: "Hindi",
+    percentage: 75,
+  },
 ];
 
-
+const experienceCards = [
+  {
+    review: "SM Technology · On-Site · Dhaka, Bangladesh",
+    imgPath: "/images/sm.png",
+    title: "Executive, Jr. Flutter Developer",
+    date: "February 2026 - Present",
+    responsibilities: [
+      "Promoted in recognition of strong performance, mobile application development expertise, and exceptional client management skills.",
+      "Delivered 10+ cross-platform and scalable mobile applications for international clients.",
+      "Led 5+ mobile application development projects while managing timelines, code reviews, and clean MVC/MVVM architecture.",
+      "Collaborated with UI/UX, Backend, and SQA teams to strengthen the product experience.",
+    ],
+  },
+  {
+    review: "Anirix Studio · Remote",
+    imgPath: "/images/as.png",
+    title: "Intern Flutter Developer",
+    date: "January 2026 - February 2026",
+    responsibilities: [
+      "Performed quantitative and qualitative data analysis and research to support senior developers designing scalable systems.",
+      "Contributed to detailed project plans and helped strengthen client relationships.",
+      "Worked with senior developers to understand state management and clean mobile application development.",
+    ],
+  },
+];
 
 const abilities = [
   {
@@ -174,45 +332,6 @@ const skillStackIcons = [
   },
 ];
 
-const qualityCards = [
-  {
-    review:
-      "Languages (HTML5, CSS3, TailwindCSS, Bootstrap, JS, TS) Frameworks (React, Three, Next.js, Vue, GSAP) Main Focus (UI/UX, interactivity)",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated with UI/UX teams to ensure seamless user experiences.",
-    ],
-  },
-  {
-    review:
-       "Languages (JS, Python, Java, PHP) Frameworks (Node.js, Next.js) Database (XAMPP, FireBase, SQL/NoSQL, JSON) Main Focus (Logic)",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Backend Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Worked on Backend in each project, focusing on scalability and logic.",
-      "Worked with teams to integrate cloud API seamlessly with the frontend.",
-    ],
-  },
-  {
-    review:
-     "Languages (JS/TS, Python)	Frameworks (Node, Next, React) Database (XAMPP, FireBase, SQL/NoSQL, JSON) Main Focus (Clean, Perfect)",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "Full Stack Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Led every project in both web and mobile application, Merged Frontend with Backend.",
-      "Improved app performance and user experience through code optimization and testing.",
-    ],
-  },
-];
-
 const aboutCards = [
   {
     title: "Hi, This is Nayma Amin Nishy",
@@ -265,7 +384,7 @@ export {
   abilities,
   logoIconsList,
   btItems,
-  qualityCards,
+  experienceCards,
   aboutCards,
   expLogos,
   socialImgs,

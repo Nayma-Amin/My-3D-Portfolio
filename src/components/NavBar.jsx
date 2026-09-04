@@ -79,7 +79,7 @@ const NavBar = () => {
             </a>
           </div>
           <a
-            href="https://drive.google.com/file/d/1XgJYhyuSzkwStOgZHvCOsCTwbwzHTTra/view?usp=sharing"
+            href="https://drive.google.com/file/d/1VffTvHLlO5UOvI1oZ5FJXcUjsl6RQpOr/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-block border border-white rounded-full overflow-hidden transition-all duration-500"

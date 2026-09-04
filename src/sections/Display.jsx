@@ -52,70 +52,33 @@ const Display = () => {
           <div className="first-project" ref={work1Ref}>
 
             <div className="image-wrapper">
-              <img src="/images/cutesy.png" alt="Cutesy" />
+                <img className="object-contain" src="/images/brotherstaxi.png" alt="Brothers Taxi" />
             </div>
             <div className="text-content">
-              <h2>Shopping App (Cutesy)</h2>
+              <h2>Brothers Taxi</h2>
 
               <p className="text-white-50 md:text-xl">
-                Cutesy is a comprehensive shopping application designed to provide users with a seamless and enjoyable online shopping experience. 
-                Built using Flutter and Dart to ensure cross-platform compatibility, Cutesy offers a wide range of features including user authentication, product browsing, shopping cart functionality, and secure payment processing.
-                The app boasts a user-friendly interface with intuitive navigation, allowing users to easily explore various product categories, view detailed product information, and make purchases with just a few taps. 
-                Used Firebase for backend services, including real-time database management and user authentication, ensuring data security and reliability.
+                A complete ride-hailing ecosystem connecting passengers and drivers through ride booking, real-time tracking, trip management, payments, and transparent pricing. The rider and driver apps streamline the journey from ride requests and navigation to trip completion.
               </p>
-              <a
-                href="https://github.com/Nayma-Amin/Cutesy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-block border border-white rounded-full overflow-hidden transition-all duration-500"
-              >
-                <div className="inner bg-white px-6 py-2 rounded-full transition-all duration-500 group-hover:bg-black">
-                  <span className="text-black font-semibold transition-all duration-500 group-hover:text-white">
-                    Details
-                  </span>
-                </div>
-              </a>
             </div>
           </div>
           {/* Right Side */}
           <div className="work-list-wrapper overflow-hidden">
             <div className="project" ref={work2Ref}>
-              <div className="image-wrapper bg-[#520806]">
-                <img src="/images/uniblood.png" alt="UniBlood" />
+              <div className="image-wrapper bg-[#b7d9c8]">
+                <img src="/images/softnutrivia.png" alt="Softnutrivia" />
               </div>
             </div>
-            <h1>Blood Donation App (Uni-Blood)</h1>
-            <a
-                href="https://github.com/Nayma-Amin/Download-PulseOfTheRedTide-UNI-BLOOD-"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-block border w-25 h-10 border-white rounded-full overflow-hidden transition-all duration-500"
-              >
-                <div className="inner bg-white px-6 py-2 rounded-full transition-all duration-500 group-hover:bg-black">
-                  <span className="text-black font-semibold transition-all duration-500 group-hover:text-white">
-                    Details
-                  </span>
-                </div>
-              </a>
+            <h1>Softnutrivia</h1>
+            <p className="text-white-50 md:text-lg">An AI-powered nutrition and meal-tracking application for personalized guidance, calorie and protein tracking, and healthier eating habits.</p>
 
             <div className="project" ref={work3Ref}>
               <div className="image-wrapper bg-[#1fb8a3]">
-                <img src="/images/lostandfound.png" alt="Lost And Found" />
+                <img src="/images/artisan.png" alt="Artisan SA" />
               </div>
             </div>
-            <h1>Lost And Found App</h1>
-            <a
-                href="https://github.com/Nayma-Amin/Lost-and-Found"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-block border w-25 h-10 border-white rounded-full overflow-hidden transition-all duration-500"
-              >
-                <div className="inner bg-white px-6 py-2 rounded-full transition-all duration-500 group-hover:bg-black">
-                  <span className="text-black font-semibold transition-all duration-500 group-hover:text-white">
-                    Details
-                  </span>
-                </div>
-              </a>
+            <h1>Artisan SA</h1>
+            <p className="text-white-50 md:text-lg">A digital marketplace connecting customers with verified artisans and service professionals across South Africa.</p>
           </div>
         </div>
       </div>

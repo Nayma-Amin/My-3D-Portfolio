@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Headers from "../components/3D_models/Headers";
 import { aboutCards } from "../constants";
 import GlowCard from "../components/GlowCard";
@@ -11,8 +11,10 @@ import ImageLine from "../components/models/ImageLine";
 gsap.registerPlugin(ScrollTrigger);
 
 const MySelf = () => {
+  const sectionRef = useRef(null);
+
   useGSAP(() => {
-    gsap.utils.toArray(".timeline-card").forEach((card) => {
+    gsap.utils.toArray(".timeline-card", sectionRef.current).forEach((card) => {
       gsap.from(card, {
         xPercent: -100,
         opacity: 0,
@@ -26,16 +28,19 @@ const MySelf = () => {
       });
     });
 
-    gsap.to(".timeline", {
+    const timeline = sectionRef.current.querySelector(".timeline");
+
+    gsap.to(timeline, {
       transformOrigin: "bottom bottom",
       ease: "power1.inOut",
       scrollTrigger: {
-        trigger: ".timeline",
+        trigger: sectionRef.current.querySelector(".timeline"),
         start: "top center",
         end: "70% center",
         onUpdate: (self) => {
-          gsap.to(".timeline", {
+          gsap.to(timeline, {
             scaleY: 1 - self.progress,
+            overwrite: true,
           });
         },
       },
@@ -45,6 +50,7 @@ const MySelf = () => {
   return (
     <section
       id="about"
+      ref={sectionRef}
       className="w-full md:mt-40 mt-20 section-padding xl:px-0"
     >
       <div className="w-full h-full md:px-20 px-5">

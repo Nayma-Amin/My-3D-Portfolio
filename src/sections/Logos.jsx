@@ -5,7 +5,7 @@ import { logoIconsList } from '../constants'
 const LogoIcon = ({ icon }) => {
   return (
     <div className="mar-item">
-      <img src={icon.imgPath} alt={icon.name} />
+      {icon.imgPath && <img src={icon.imgPath} alt={icon.name} />}
       <p className="text-sm font-semibold">{icon.name}</p>
       <p className="text-xs text-gray-400">{icon.percentage}%</p>
     </div>
