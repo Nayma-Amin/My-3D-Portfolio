@@ -344,7 +344,7 @@ const aboutCards = [
     ],
   },
   {
-    title: "Education",
+    title: "Education - East West University",
     imgP: "/images/ewu.jpg",
     review: "Languages (Dart, Flutter) Main Focus (Cross-platform mobile development, UI/UX)",
     responsibilities: [
