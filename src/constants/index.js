@@ -1,4 +1,4 @@
- const navLinks = [
+const navLinks = [
   {
     name: "About Me",
     link: "#about",
@@ -35,7 +35,7 @@ const tags = [
 const btItems = [
   { value: 1, suffix: "+", context: "Years of Experience" },
   { value: 12, suffix: "+", context: "Languages Learned" },
-  { value: 15, suffix: "+", context: "Completed Projects" },
+  { value: 10, suffix: "+", context: "Completed Projects" },
   { value: 90, suffix: "%", context: "Project Success Rate" },
 ];
 
@@ -240,8 +240,8 @@ const experienceCards = [
     date: "February 2026 - Present",
     responsibilities: [
       "Promoted in recognition of strong performance, mobile application development expertise, and exceptional client management skills.",
-      "Delivered 10+ cross-platform and scalable mobile applications for international clients.",
-      "Led 5+ mobile application development projects while managing timelines, code reviews, and clean MVC/MVVM architecture.",
+      "Delivered 7+ cross-platform and scalable mobile applications for international clients.",
+      "Led 4+ mobile application development projects while managing timelines, code reviews, and clean MVC/MVVM architecture.",
       "Collaborated with UI/UX, Backend, and SQA teams to strengthen the product experience.",
     ],
   },
@@ -249,7 +249,7 @@ const experienceCards = [
     review: "Anirix Studio · Remote",
     imgPath: "/images/as.png",
     title: "Intern Flutter Developer",
-    date: "January 2026 - February 2026",
+    date: "November 2026 - February 2026",
     responsibilities: [
       "Performed quantitative and qualitative data analysis and research to support senior developers designing scalable systems.",
       "Contributed to detailed project plans and helped strengthen client relationships.",
