@@ -131,6 +131,12 @@ section {
     .nishy-layout {
       @apply mt-20 pt-0 h-auto;
     }
+
+    /* The square canvas leaves ~19.8% transparent padding below the photo.
+       Pull the text into it; 18% + 56px cap stay short of the image. */
+    .nishy-text {
+      margin-top: calc(-1 * clamp(20px, 18%, 56px));
+    }
   }
 
   .navbar {
