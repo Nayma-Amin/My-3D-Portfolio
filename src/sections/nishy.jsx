@@ -36,11 +36,11 @@ const Nishy = () => {
 
       <div className="nishy-layout p-10">
         {/* Left Side : My content */}
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-2 px-5">
+        <header className="flex flex-col justify-center w-full md:px-2 px-5">
           <div className="flex flex-col gap-5 p-0">
-            <div className=" absolute w-full h-full flex items-center justify-center z-0">
-        <Image/>
-      </div>
+            <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
+              <Image className="hero-star" />
+            </div>
             <figure>
               <div className="nishy-3d-layout">
                 <DimensionExperience />

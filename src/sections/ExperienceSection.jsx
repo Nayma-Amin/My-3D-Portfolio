@@ -55,6 +55,9 @@ const ExperienceSection = () => {
                     sub="My Professional Journey" />
 
                 <div className="mt-32 relative">
+                    <div className="absolute inset-0 z-10 pointer-events-none">
+                        <ImageLine />
+                    </div>
                     <div className="relative z-50 xl:space-y-32 space-y-10">
                         {experienceCards.map((card, index) => (
                             <div key={card.title} className="exp-card-wrapper relative">
